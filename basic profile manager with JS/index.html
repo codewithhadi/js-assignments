@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>basic profile editor</title>
+</head>
+<body>
+    <script>
+        function changeIMG() {
+            let image = document.getElementById("profile_pic")
+            image.src = 'images/6c12a8359754acb9f176c9155637c912.jpg'
+        }
+        function changebg(){
+            let card = document.getElementById("card")
+            let toChangeBg = document.getElementById("but_no4")
+            card.style.backgroundColor = 'red';
+        }
+        function changename(){
+            let name = document.getElementById("name")
+            let input = document.getElementById("input")
+
+            
+        }
+
+        
+    </script>
+    <div id="card">
+            <img src="images/cool-profile-picture-87h46gcobjl5e4xu.jpg" id="profile_pic" >
+        <div class="Name">
+            <h1 id="name">hadi</h1>
+        </div>
+        <div class="description">
+            <p>AI enthusiast</p>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="type here to change" id="input">
+        </div>
+        <center>
+        <div class="card_controllers">
+            <button class="but_no1" onclick="changename()">change name</button>
+            <button class="but_no2">change description</button>
+            <button class="but_no3" onclick="changeIMG()">change profile picture</button>
+            <button id="but_no4" onclick="changebg()">change bg</button>
+        </div>
+    </center>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
